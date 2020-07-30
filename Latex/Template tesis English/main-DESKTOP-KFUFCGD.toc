@@ -1,0 +1,28 @@
+\boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
+\babel@toc {spanish}{}
+\contentsline {chapter}{Resumen}{\es@scroman {iii}}{section*.1}
+\contentsline {chapter}{\numberline {1}Introducci\IeC {\'o}n}{1}{chapter.5}
+\contentsline {chapter}{\numberline {2}Preliminares}{3}{chapter.6}
+\contentsline {section}{\numberline {2.1}Conceptos en c\IeC {\'a}lculo tensorial}{3}{section.7}
+\contentsline {subsubsection}{Matrizaci\IeC {\'o}n tensorial}{4}{section*.9}
+\contentsline {section}{\numberline {2.2}Medida de Lebesgue}{4}{section.11}
+\contentsline {section}{\numberline {2.3}Circuitos aritm\IeC {\'e}ticos convolucionales (ConvAC)}{5}{section.12}
+\contentsline {subsection}{\numberline {2.3.1}Construcci\IeC {\'o}n del espacio hip\IeC {\'o}tesis }{6}{subsection.17}
+\contentsline {section}{\numberline {2.4}Sistema cu\IeC {\'a}ntico de muchos cuerpos}{6}{section.18}
+\contentsline {subsection}{\numberline {2.4.1}Medidas de entrelazamientos en la mec\IeC {\'a}nica cu\IeC {\'a}ntica}{7}{subsection.24}
+\contentsline {chapter}{\numberline {3}ConvAC como red bajo descomposici\IeC {\'o}n tensorial}{9}{chapter.27}
+\contentsline {section}{\numberline {3.1}Red superficial como descomposici\IeC {\'o}n CP}{9}{section.28}
+\contentsline {section}{\numberline {3.2}Red profunda como descomposici\IeC {\'o}n HT}{10}{section.32}
+\contentsline {subsection}{\numberline {3.2.1}Expresividad por profundidad}{11}{subsection.34}
+\contentsline {chapter}{\numberline {4}Medidas de correlaci\IeC {\'o}n en ConvAC}{15}{chapter.38}
+\contentsline {section}{\numberline {4.1}Rank de separaci\IeC {\'o}n }{15}{section.40}
+\contentsline {subsection}{\numberline {4.1.1}Correlaciones modeladas por una red superficial}{16}{subsection.43}
+\contentsline {subsection}{\numberline {4.1.2}Correlaciones modeladas por una red profunda}{17}{subsection.45}
+\contentsline {chapter}{\numberline {5}Sobrelapamiento}{19}{chapter.51}
+\contentsline {chapter}{\numberline {6}ConvAC como Red Tensorial(HT-TN)}{21}{chapter.63}
+\contentsline {subsection}{\numberline {6.0.1}Correlaciones modeladas por un HT-TN}{21}{subsection.72}
+\contentsline {subsection}{\numberline {6.0.2}Como se simulan de sistemas de muchos cuerpos por medio de HT-TN}{21}{subsection.73}
+\contentsline {chapter}{\numberline {7}Conclusiones}{23}{chapter.74}
+\contentsline {chapter}{Referencias}{25}{chapter*.75}
+\contentsline {chapter}{\numberline {A}Ap\IeC {\'e}ndices}{27}{appendix.76}
+\contentsline {section}{\numberline {A.1}Pruebas}{27}{section.77}

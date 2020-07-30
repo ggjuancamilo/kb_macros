@@ -1,0 +1,41 @@
+\chapter{Apéndice A} \label{ap:htdecomp}
+
+
+\section{Expresividad por capa de un ConvAC}
+
+En este apéndice se procederá a dar una prueba del corolario \autoref{cl:HTcapas}. Para efectos prácticos se tomará por defecto la misma partición para matrizaciones que en la prueba del \autoref{th:HT} y en la operación de RT $(\varphi) $ se toma también por defecto $ q= 2^{L_2-1} $, al igual que se mantienen las definiciones del corolario a tratar.\\
+
+La prueba de este corolario es muy similar a la del \autoref{th:HT} y al igual que en el anterior basta mostrar que $\forall\{l>L_2\} rank\dsb{\varphi(\A^{(1)})} \geq r^{2^{l-L_2}} $ y se hará de manera inductiva.\\
+
+Denote $\textbf{e}_i$ el vector con $1$ en la entrada $i$ y $0$ en el resto, $\textbf{0}$ el vector que solo contiene entradas nulas y $\textbf{1}$ el vector con todas sus entradas igual a 1. Se asigna  $\textbf{a}^{0,j,\alpha} = \textbf{e}_\alpha$ cuando $r\leq\alpha$ y $\textbf{0}$ de lo contrario, $\textbf{a}^{l,j,\gamma} = \textbf{e}_\gamma$ cuando $r\leq\gamma$ y $\textbf{0}$ para $1\leq l \leq L_2-1 $ y $\textbf{a}^{L_2,j,\gamma} = \textbf{1}$. Con lo anterior cuando $ \gamma\leq r; \phi^{L_2-1,j,\gamma}  = \otimes_{j=1}^{2^{L_{2}-2}}(\textbf{e}_\gamma \otimes \textbf{e}_\gamma ) $. De forma más sencilla, el anterior es el tensor que contiene una entrada igual a 1 en la posición $ \gamma  $ de cada modo y cero en el resto. Al aplicar $\varphi(\phi^{L_2-1,j,\gamma})\textbf{e}_{i_\gamma}$ para un conjunto de índices $ 1< i_1 < i_r < M^{L_2-1} $ y para $ \gamma \leq r $, cero de lo contrario. Con lo anterior en pie se tiene:
+
+\begin{equation}
+\begin{split}
+	\varphi(\phi(L_2,j, \gamma)) &= \varphi\left(
+	\sum_{\alpha = 1}^{r_{L_2-1}} \phi^{L_2-1,2j-1,\alpha} \otimes \phi^{L_2-1,2j,\alpha} \right)\\
+	&=
+	\sum_{\alpha = 1}^{r_{L_2-1}}
+	\varphi(\phi^{L_2-1,2j-1,\alpha}) \otimes \varphi(\phi^{L_2-1,2j,\alpha}) = 
+	\sum_{\alpha = 1}^{r} \textbf{e}_{i_\alpha} \textbf{e}_{i_\alpha}^\top.
+\end{split}
+\end{equation}
+
+La suma se trunca en $r$ ya que después representa el producto de vectores cero. Ya que $ i_1\dots i_r $
+tienen diferentes valores, la matriz $ \varphi(\phi(L_2,j, \gamma)) $ tiene rank $r$. Considere la submatriz $r\times r$ de $\varphi(\phi(L_2,j, \gamma))$, es fácil notar que ésta no es singular; el determinante de ésta es un polinomio en los elementos de $ \{ \textbf{a}^{l,j,\gamma}_{l,j,\gamma} \} $ y por ende toma el valor de cero en un conjunto de medida cero. Con esto $ rank \varphi(\phi(L_2,j, \gamma)) = r$ excepto par aun conjunto de medida cero, probando el primer paso inductivo. Sea $ l\in \{L_2+1, \dots,L_1-1\} $ y suponga que la hipótesis se cumple para $l-1$, es decir, $rank \dsb{\varphi(\phi(l,j, \gamma))} \geq r^{2^{l-L_2}} $. Aplicando $\varphi$ y matrizando para la expresión de $ \phi^{l,j,\gamma} $:
+
+\begin{equation}
+\begin{split}
+	\dsb{\varphi(\phi^{l,j,\gamma})} 
+	&= \dsb{\varphi
+	\left( \sum_{\alpha=1}^{r_{l-1}}
+	a_\alpha^{l,j,\gamma} \phi^{l-1,2j-1,\alpha} \otimes \phi^{l-1,2j,\alpha}  \right)}\\
+	&=  \sum_{\alpha=1}^{r_{l-1}}
+		a_\alpha^{l,j,\gamma} \dsb{\varphi
+		(\phi^{l-1,2j-1,\alpha})} \odot \dsb{ \varphi(\phi^{l-1,2j,\alpha} )}.
+\end{split}
+\end{equation}
+
+Definiendo $ M_\alpha := \dsb{\varphi(\phi^{l-1,2j-1,\alpha})} \odot \dsb{ \varphi(\phi^{l-1,2j,\alpha} )} $, se tiene que $rank\ M_\alpha \leq r^{2^{l-1-L_2}} \cdot r^{2^{l-1-L_2}} = r^{2^{l-L_2}} $ y aplicando el lema \autoref{lm:2} se tiene $rank  \dsb{\varphi(\phi^{l,j,\gamma})}  \geq r^{2^{l-L_2}} $ cumpliéndose la hipótesis inductiva.\\
+
+Precisamente para  $ l=L_1 $ se tiene que $ rank \dsb{\A^(1)}  \geq \prod_{j=1}^{2^{L-L_1+1}} r^{2^{L_1-1-L_2}} = r^{L-L_2} $.
+
